@@ -1,6 +1,6 @@
 {
     "name": "UTM Abominator",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "manifest_version": 2,
     "description": "A Chrome extension to remove all UTM query string parameters from your browser bar.",
     "incognito": "spanning",

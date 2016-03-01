@@ -1,7 +1,7 @@
 /**
  * UTM Abominator - remove all horrible link uselessness from your browser bar.
  */
- 
+
  if (location.search.length > 0) {
      const BAN = ['utm_source', 'utm_medium', 'utm_campaign'];
 
@@ -36,10 +36,7 @@
  //  conditionally write the changes
      if (changed) {
          var search = Object.keys(params).map(function(k) {
-             var result = [k];
-             if (params[k])
-                 result.push(params[k]);
-             return result.join('=');
+             return [k, params[k]].filter(function(k) { return Boolean(k); }).join('=');
          }).join('&');
 
          if (search.length > 0)
