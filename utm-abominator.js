@@ -3,7 +3,7 @@
  */
 
  if (location.search.length > 0) {
-     const BAN = ['utm_source', 'utm_medium', 'utm_campaign'];
+     const BAN = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
 
      var params = { };
      var key = null, value = null, split = null;
